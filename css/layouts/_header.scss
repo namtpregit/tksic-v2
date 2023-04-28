@@ -133,15 +133,17 @@
             .__content {
               margin-left: calc(46px + 16px);
               padding-top: 24px;
-              display: flex;
               .__content-ul {
-                &.left {
-                  width: 65%;
-                }
-                &.right {
-                  width: 35%;
-                }
+                display: flex;
+                flex-wrap: wrap;
+                width: 100%;
                 li {
+                  &:nth-child(2n+1) {
+                    width: 65%;
+                  }
+                  &:nth-child(2n) {
+                    width: 35%;
+                  }
                   a {
                     font-size: 18px;
                     line-height: 40px;

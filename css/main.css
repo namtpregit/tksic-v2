@@ -2952,15 +2952,19 @@ a:hover {
 #header .nav .nav-left .nav-menu .nav-item .submenu .__content {
   margin-left: 62px;
   padding-top: 24px;
+}
+#header .nav .nav-left .nav-menu .nav-item .submenu .__content .__content-ul {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-wrap: wrap;
 }
-#header .nav .nav-left .nav-menu .nav-item .submenu .__content .__content-ul.left {
-  width: 65%;
-}
-#header .nav .nav-left .nav-menu .nav-item .submenu .__content .__content-ul.right {
+#header .nav .nav-left .nav-menu .nav-item .submenu .__content .__content-ul li:nth-child(2n) {
   width: 35%;
+}
+#header .nav .nav-left .nav-menu .nav-item .submenu .__content .__content-ul li:nth-child(2n+1) {
+  width: 65%;
 }
 #header .nav .nav-left .nav-menu .nav-item .submenu .__content .__content-ul li a {
   font-size: 18px;

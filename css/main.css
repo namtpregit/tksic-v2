@@ -2818,10 +2818,9 @@ a:hover {
   }
 }
 #header .logo {
-  margin: 0 2rem;
   position: absolute;
   top: 10px;
-  left: 72px;
+  left: 104px;
 }
 #header .logo img {
   width: 100px;
@@ -2829,7 +2828,12 @@ a:hover {
      object-fit: unset;
   height: auto;
 }
-@media (max-width: 1500px) {
+@media (max-width: 1600px) {
+  #header .logo {
+    left: 52px;
+  }
+}
+@media (max-width: 1450px) {
   #header .logo {
     display: none;
   }
@@ -2843,14 +2847,14 @@ a:hover {
           justify-content: space-between;
   height: 72px;
 }
-@media (max-width: 993px) {
+@media (max-width: 1200px) {
   #header .nav {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
 }
-@media (max-width: 993px) {
+@media (max-width: 1200px) {
   #header .nav {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -2954,11 +2958,15 @@ a:hover {
   padding-top: 24px;
 }
 #header .nav .nav-left .nav-menu .nav-item .submenu .__content .__content-ul {
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+}
+#header .nav .nav-left .nav-menu .nav-item .submenu .__content .__content-ul li:nth-child(2n+1) {
+  width: 65%;
 }
 #header .nav .nav-left .nav-menu .nav-item .submenu .__content .__content-ul li:nth-child(2n) {
   width: 35%;
@@ -2999,7 +3007,7 @@ a:hover {
     font-size: 1rem;
   }
 }
-@media (max-width: 993px) {
+@media (max-width: 1200px) {
   #header .nav .nav-left {
     display: none;
   }
@@ -3172,7 +3180,7 @@ a:hover {
     width: 12.5rem;
   }
 }
-@media (max-width: 993px) {
+@media (max-width: 1200px) {
   #header .nav .nav-right {
     width: 100%;
     -webkit-box-pack: justify;
